@@ -1,0 +1,21 @@
+header {
+  display: grid;
+}
+header .logo {
+  grid-row: 1;
+  grid-column: 1;
+}
+header .logo img {
+  width: 4rem;
+}
+header .searchBar {
+  grid-row: 1;
+  grid-column: 2;
+}
+header .profileImg {
+  grid-row: 1;
+  grid-column: 3;
+}
+header .profileImg img {
+  width: 3rem;
+}/*# sourceMappingURL=style.css.map */

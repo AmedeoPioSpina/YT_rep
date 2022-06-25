@@ -1,0 +1,23 @@
+header{
+    display: grid;
+    .logo{
+        grid-row: 1;
+        grid-column: 1;
+        img{
+            width: 4rem;
+        }
+    }
+
+    .searchBar{
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .profileImg{
+        grid-row: 1;
+        grid-column: 3;
+        img{
+            width: 3rem;
+        }
+    }
+}
