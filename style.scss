@@ -1,6 +1,13 @@
 body{
     font-family: 'Roboto', sans-serif;
     background: #212121;
+}
+
+@media screen and(max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 480px) {
     header{
         display: flex;
         position: sticky;
@@ -172,6 +179,7 @@ body{
                 }
                 button{
                     display: flex;
+                    margin-left: auto;
                     img{
                         width: 1.2rem;
                         margin: 0.4rem 0.6rem;
