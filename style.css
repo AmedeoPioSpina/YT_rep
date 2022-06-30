@@ -4,7 +4,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  header {
+  body header {
     display: flex;
     position: -webkit-sticky;
     position: sticky;
@@ -14,33 +14,32 @@ body {
     background-color: #212121;
     width: 100vw;
   }
-  header .logo {
+  body header .logo {
     margin: 0 auto 0 0.8rem;
   }
-  header .logo img {
+  body header .logo img {
     width: 5.3rem;
   }
-  header .searchBar {
+  body header .searchBar {
     margin: 0.8rem 1.3rem 0.8rem 0;
   }
-  header .searchBar button img {
+  body header .searchBar button img {
     width: 1.3rem;
   }
-  header .searchBar form {
+  body header .searchBar form {
     display: none;
   }
-  header .profileImg {
+  body header .profileImg {
     margin-right: 0.5rem;
   }
-  header .profileImg img {
+  body header .profileImg img {
     width: 1.8rem;
   }
-
-  nav {
+  body nav {
     width: 100vw;
     position: fixed;
   }
-  nav .popularKeywords {
+  body nav .popularKeywords {
     background: #212121;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
@@ -48,20 +47,23 @@ body {
     position: sticky;
     list-style-type: none;
   }
-  nav .popularKeywords ul {
+  body nav .popularKeywords ::-webkit-scrollbar {
+    display: none;
+  }
+  body nav .popularKeywords ul {
     background: #212121;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     overflow-y: hidden;
     display: flex;
     align-items: center;
   }
-  nav .popularKeywords ul li {
+  body nav .popularKeywords ul li {
     display: flex;
     align-items: center;
     padding: 0.5rem 0;
     margin: 0 0.3rem;
   }
-  nav .popularKeywords ul li a {
+  body nav .popularKeywords ul li a {
     background-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
     white-space: nowrap;
@@ -74,28 +76,25 @@ body {
     align-items: center;
     padding: 0.5rem;
   }
-  nav .popularKeywords ul #explore {
+  body nav .popularKeywords ul #explore {
     margin: 0 0.8rem 0 0.8rem;
   }
-  nav .popularKeywords ul #explore a {
+  body nav .popularKeywords ul #explore a {
     border-radius: 2px;
     display: flex;
     align-items: center;
     height: 0.8rem;
   }
-  nav .popularKeywords ul #explore a img {
+  body nav .popularKeywords ul #explore a img {
     width: 1.3rem;
     margin-right: 0.3rem;
   }
-  nav .popularKeywords ul .verticalLine {
+  body nav .popularKeywords ul .verticalLine {
     height: 1.8rem;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
     margin-right: 0.3rem;
   }
-  nav .popularKeywords::-webkit-scrollbar {
-    display: none;
-  }
-  nav menu {
+  body nav menu {
     background-color: #212121;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: fixed;
@@ -105,10 +104,10 @@ body {
     justify-content: space-around;
     list-style-type: none;
   }
-  nav menu li {
+  body nav menu li {
     margin: 0.5rem 0 0.5rem 0;
   }
-  nav menu li a {
+  body nav menu li a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,18 +115,17 @@ body {
     color: white;
     font-size: 0.7rem;
   }
-  nav menu li a img {
+  body nav menu li a img {
     width: 1.3rem;
   }
-
-  main {
+  body main {
     height: 300vh;
     padding-top: 4rem;
   }
-  main .content {
+  body main .content {
     margin-bottom: 1rem;
   }
-  main .content .videoThumbnail {
+  body main .content .videoThumbnail {
     background-color: rgba(255, 255, 255, 0.1);
     width: 100vw;
     height: 13rem;
@@ -136,7 +134,7 @@ body {
     align-items: flex-end;
     margin-bottom: 0.6rem;
   }
-  main .content .videoThumbnail .videoDuration {
+  body main .content .videoThumbnail .videoDuration {
     color: white;
     font-size: 0.7rem;
     background-color: black;
@@ -144,40 +142,40 @@ body {
     padding: 0.2rem;
     margin: 0 0.3rem 0.3rem 0;
   }
-  main .content .info {
+  body main .content .info {
     display: flex;
   }
-  main .content .info .infoLeftSez img {
+  body main .content .info .infoLeftSez img {
     width: 3rem;
     margin: 0 0.6rem 0 0.6rem;
   }
-  main .content .info .infoRightSez {
+  body main .content .info .infoRightSez {
     margin-right: 2rem;
   }
-  main .content .info .infoRightSez h2 {
+  body main .content .info .infoRightSez h2 {
     color: white;
     font-weight: 600;
     font-size: 0.9rem;
     line-height: 1.1rem;
     margin: 0.2rem 0 0.3rem 0;
   }
-  main .content .info .infoRightSez .infoVideo {
+  body main .content .info .infoRightSez .infoVideo {
     display: flex;
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.8rem;
   }
-  main .content .info .infoRightSez .circle {
+  body main .content .info .infoRightSez .circle {
     background-color: rgba(255, 255, 255, 0.6);
     width: 0.2rem;
     height: 0.2rem;
     margin: auto 0.2rem;
     border-radius: 25px;
   }
-  main .content .info button {
+  body main .content .info button {
     display: flex;
     margin-left: auto;
   }
-  main .content .info button img {
+  body main .content .info button img {
     width: 1.2rem;
     margin: 0.4rem 0.6rem;
   }
